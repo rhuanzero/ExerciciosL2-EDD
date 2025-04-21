@@ -70,7 +70,7 @@ public class EX02
 
 	public void combinaFilas(Fila f1, Fila f2){
 
-		while (!f1.vazia() && !f2.vazia() && this.cheia()) {
+		while (!(f1.vazia() && f2.vazia()) && (!this.cheia())) {
 			if (!f1.vazia()) {
 				this.insere(f1.remove());
 			}
