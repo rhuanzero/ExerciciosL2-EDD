@@ -1,13 +1,15 @@
+/*Implemente um método estático na classe Fila, a qual implementa uma fila circular. Esse
+método deve receber uma fila circular e retornar uma fila circular dupla.*/
 
-public class Fila
-{
+public class EX04
+{ //Classe Fila
 	/* Atributos protected para serem usados na subclasse. */
 	protected int tamanho;	/* Tamanho do vetor */
 	protected int[] vetor;	/* Vetor de elementos */
 	protected int ini;	/* Posicao do proximo elemento a ser retirado */
 	protected int n;	/* Numero de elementos na fila */
-	
-	public Fila(int tam)
+
+	public EX04(int tam)
 	{
 		tamanho = tam;
 		vetor = new int[tamanho];
@@ -53,5 +55,21 @@ public class Fila
 	  } 
 	  else
 	    return false;
+	}
+
+	// Metodo estático pedido para o EX04
+	public static FilaDupla filaparadupla(Fila fila){
+		FilaDupla fdupla = new FilaDupla(fila.getTamanho()); // Inserido na classe Fila
+
+		while (!fila.vazia()){
+			fdupla.insere(fila.remove());
+		}
+
+		return fdupla;
+	}
+
+
+	public int getTamanho() {
+		return tamanho;
 	}
 }

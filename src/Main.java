@@ -130,6 +130,12 @@ public class Main {
 			}
 			System.out.println();
 		}*/
+        /*Fila fteste = new Fila(10);
+
+        for (int i = 0; i < 10; i++) {
+            fteste.insere(i);
+        }*/
+        EX05.converteBinario(16);
 
     }
 }

@@ -18,7 +18,7 @@ public class FilaDupla extends Fila
 			ini = prec; /* Atualiza �ndice para in�cio */
 			n++;
 			return true;
-		} 
+		}
 		else
 			return false;
 	}
