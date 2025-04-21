@@ -1,54 +1,13 @@
-public class Main {
-    public static void main(String[] args) {
-        //EX02
-        /*Fila f1 = new Fila(3);
-        Fila f2 = new Fila(3);
-        EX02 filamista = new EX02(10);
-        f1.insere(1);
-        f1.insere(2);
-        f1.insere(3);
-        f2.insere(4);
-        f2.insere(5);
-        f2.insere(6);
+/*3) Como você implementaria uma fila de pilhas? E uma pilha de filas? E uma fila de filas?
+Implemente cada uma dessas estruturas. Você pode reaproveitar ou modificar as classes
+fornecidas e apresentadas em sala de aula.*/
 
-        filamista.combinaFilas(f1,f2);*/
+import java.util.Scanner;
 
-        //EX 03
-        /*Pilha p = new Pilha();
-        Pilha p2 = new Pilha();
-        Pilha p3 = new Pilha();
-        Pilha p4 = new Pilha();
-        Pilha p5 = new Pilha();
-
-        FilaGenerica<Pilha> filapilha = new FilaGenerica<>(5);
-
-        p.push('c'); p.push('d'); p.push('e'); p.push('f'); p.push('g');
-        p2.push('c'); p2.push('d'); p2.push('e'); p2.push('f'); p2.push('g');
-        p3.push('c'); p3.push('d'); p3.push('e'); p3.push('f'); p3.push('g');
-        p4.push('c'); p4.push('d'); p4.push('e'); p4.push('f'); p4.push('g');
-        p5.push('c'); p5.push('d'); p5.push('e'); p5.push('f'); p5.push('g');
-
-        filapilha.insere(p);
-        filapilha.insere(p2);
-        filapilha.insere(p3);
-        filapilha.insere(p4);
-        filapilha.insere(p5);
-
-        while (!filapilha.vazia()){
-            Pilha pilha = filapilha.remove();
-
-            while (!pilha.vazia()){
-                System.out.print(pilha.pop());;
-            }
-            System.out.println();
-        }
-
-
-*/
-
-
-        //EX03
-        /*Scanner in = new Scanner(System.in);
+public class EX03MAIN
+{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
 		// Fila de Pilhas
 		Pilha p = new Pilha();
 		Pilha p2 = new Pilha();
@@ -56,7 +15,7 @@ public class Main {
 		Pilha p4 = new Pilha();
 		Pilha p5 = new Pilha();
 
-		FilaGenerica<Pilha> filapilha = new FilaGenerica<>(5);
+		FilaGenericaEX03<Pilha> filapilha = new FilaGenericaEX03<>(5);
 
 		p.push('c'); p.push('d'); p.push('e'); p.push('f'); p.push('g');
 		p2.push('c'); p2.push('d'); p2.push('e'); p2.push('f'); p2.push('g');
@@ -80,7 +39,7 @@ public class Main {
 		}
 
 		// Pilha de Filas
-		PilhaGenerica<Fila> pilhafila = new PilhaGenerica<>(10);
+		PilhaGenericaEX03<Fila> pilhafila = new PilhaGenericaEX03<>(10);
 
 		Fila f1 = new Fila(5);
 		Fila f2 = new Fila(5);
@@ -109,7 +68,7 @@ public class Main {
 		}
 
 		//Fila de filas
-		FilaGenerica<Fila> filafila = new FilaGenerica<>(10);
+		FilaGenericaEX03<Fila> filafila = new FilaGenericaEX03<>(10);
 
 		f1.insere(1); f1.insere(2); f1.insere(3); f1.insere(4); f1.insere(5);
 		f2.insere(1); f2.insere(2); f2.insere(3); f2.insere(4); f2.insere(5);
@@ -129,7 +88,22 @@ public class Main {
 				System.out.print(fila1.remove());;
 			}
 			System.out.println();
-		}*/
+		}
 
-    }
+
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
 }
