@@ -24,12 +24,15 @@ public class SOEX01 {
 
     public void imprimirFila(){ //c. Imprimir o conteúdo da fila de processos em determinado momento. Cada processo possui um número identificador.
         Fila aux = new Fila(processos.getTamanho());
+        if (processos.vazia()){
+            System.out.println("a fila esta vazia!");
+            return;
+        }
         while (!processos.vazia()){
             int x = retirarProcesso();
             aux.insere(x);
             System.out.println("Id do processo: "+x);
         }
-
         while (!aux.vazia()){
             processos.insere(aux.remove());
         }
