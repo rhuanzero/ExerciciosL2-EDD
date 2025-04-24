@@ -55,6 +55,10 @@ public class Fila
 	    return false;
 	}
 
+	public int getN() {
+		return n;
+	}
+
 	public int getTamanho() {
 		return tamanho;
 	}

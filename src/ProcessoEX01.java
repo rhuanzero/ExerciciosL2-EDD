@@ -7,11 +7,13 @@ b. Retirar da fila o processo com o maior tempo de espera;
 c. Imprimir o conteúdo da fila de processos em determinado momento. Cada processo possui
 um número identificador.*/
 
-public class EX01 {
-    public static void main(String[] args) {
+public class ProcessoEX01 {
+    int id;
 
-        Fila filaprocessos = new Fila(5);
-
-
+    public ProcessoEX01(int id) {
+        this.id = id;
+    }
+    public int getId() {
+        return id;
     }
 }

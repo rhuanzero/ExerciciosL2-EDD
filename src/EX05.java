@@ -18,8 +18,25 @@ public class EX05
 		}
 
 		for (int i = 1; i <= n; i++){
-			System.out.println(Integer.toBinaryString(fila.remove()));
+			//System.out.println(Integer.toBinaryString(fila.remove()));
+			converteBinarioNum(i);
+			System.out.println();
 		}
 
+	}
+
+
+	private static void converteBinarioNum(int n){
+		int nfinal = (int)((Math.log(n) / Math.log(2))) + 1;
+		FilaDupla fila = new FilaDupla(nfinal);
+
+		for (int i = 0; i <= nfinal; i++){
+			fila.insereInicio(n%2);
+			n = n/2;
+		}
+
+		for (int i = 0; i < nfinal; i++){
+			System.out.print(fila.remove());
+		}
 	}
 }
